@@ -53,7 +53,7 @@ export class MedicoService {
 
     return this.http.delete( url )
               .map( resp => {
-                swal( 'Médico Borrado', 'Médico borrado correctamente', 'success' );
+                swal( 'Consulta Borrada', 'Consulta borrada correctamente', 'success' );
                 return resp;
               });
 
@@ -70,7 +70,7 @@ export class MedicoService {
 
       return this.http.put( url, medico )
                 .map( (resp: any) => {
-                  swal('Médico Actualizado', medico.nombre, 'success');
+                  swal('Datos de la consulta actualizada', medico.nombre, 'success');
                   return resp.medico;
 
                 });
@@ -80,8 +80,8 @@ export class MedicoService {
       url += '?token=' + this._usuarioService.token;
       return this.http.post( url, medico )
               .map( (resp: any) => {
-                swal('Médico Creado', medico.nombre, 'success');
-                //NUEVOS
+                swal('Consutla creada', medico.nombre, 'success');
+                // NUEVOS
                 return resp.medico;
               });
     }

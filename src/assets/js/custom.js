@@ -10653,46 +10653,86 @@ function init_plugins() {
 
                 var defaultEvents = [{
 
-                        title: 'Released Ample Admin!',
-                        start: new Date($.now() + 506800000),
+                        title: 'Fuera de atencion',
+                        start: new Date($.now() + 522800000),
+                        className: 'bg-danger'
+                    }, {
+                        title: 'Consulta: Carlos',
+                        start: new Date($.now() - 6000000),
+                        end: new Date($.now() + 6000000),
                         className: 'bg-info'
                     }, {
-                        title: 'This is today check date',
-                        start: today,
-                        end: today,
-                        className: 'bg-danger'
+                        title: 'Consulta: Christian',
+                        start: new Date($.now() + 40000000),
+                        end: new Date($.now() + 60000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Ivett',
+                        start: new Date($.now() + 80000000),
+                        end: new Date($.now() + 90000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Jhoel',
+                        start: new Date($.now() + 520000000),
+                        end: new Date($.now() + 530000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Carlos',
+                        start: new Date($.now() + 530000000),
+                        end: new Date($.now() + 540000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Christian',
+                        start: new Date($.now() + 679000000),
+                        end: new Date($.now() + 670000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Pablo',
+                        start: new Date($.now() + 688000000),
+                        end: new Date($.now() + 689000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Eyvind',
+                        start: new Date($.now() + 7000000000),
+                        end: new Date($.now() + 7010000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Jhoel',
+                        start: new Date($.now() + 1000000000),
+                        end: new Date($.now() + 1001000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Israel',
+                        start: new Date($.now() + 1003000000),
+                        end: new Date($.now() + 1004000000),
+                        className: 'bg-info'
+                    }, {
+                        title: 'Consulta: Alba',
+                        start: new Date($.now() + 1010000000),
+                        end: new Date($.now() + 1011000000),
+                        className: 'bg-info'
                     },
                     {
-                        title: 'This is your birthday',
+                        title: 'Consulta: Andres',
                         start: new Date($.now() + 848000000),
                         className: 'bg-info'
                     }, {
-                        title: 'your meeting with john',
-                        start: new Date($.now() - 1099000000),
-                        end: new Date($.now() - 919000000),
-                        className: 'bg-warning'
+                        title: 'Consulta: Carlos',
+                        start: new Date($.now() + 900000000),
+
+                        className: 'bg-info'
                     }, {
-                        title: 'your meeting with john',
-                        start: new Date($.now() - 6000000),
-                        end: new Date($.now() + 6000000),
-                        className: 'bg-purple'
-                    }, {
-                        title: 'your meeting with Christian',
-                        start: new Date($.now() - 66666000000),
-                        end: new Date($.now() - 6000000),
-                        className: 'bg-purple'
-                    }, {
-                        title: 'your meeting with john',
+                        title: 'Consulta: Carlos',
                         start: new Date($.now() - 399000000),
-                        end: new Date($.now() - 219000000),
+                        end: new Date($.now() - 398000000),
                         className: 'bg-info'
                     },
                     {
-                        title: 'Hanns birthday',
+                        title: 'Fuera de atencion',
                         start: new Date($.now() + 868000000),
                         className: 'bg-danger'
                     }, {
-                        title: 'Like it?',
+                        title: 'Almuerzo',
                         start: new Date($.now() + 348000000),
                         className: 'bg-success'
                     }

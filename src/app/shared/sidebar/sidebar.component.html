@@ -13,45 +13,42 @@
                         <span class="hide-menu"> {{ usuario.nombre }} </span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a routerLinkActive="active" routerLink="/perfil">Perfil </a></li>
-                        <li><a href="javascript:void()">My Balance</a></li>
-                        <li><a href="javascript:void()">Inbox</a></li>
-                        <li><a routerLinkActive="active" routerLink="/account-settings">Account Setting</a></li>
-                        <li><a (click)="_usuarioService.logout()" class="pointer">Logout</a></li>
-                    </ul>
-                </li>
-                <li class="nav-devider"></li>
-                <li class="nav-small-cap">PERSONAL</li>
-
-
-                <li *ngFor="let menu of _sidebar.menu">
-                    <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu.icono"></i><span class="hide-menu"> {{ menu.titulo }} <span class="label label-rouded label-themecolor pull-right"> {{ menu.submenu.length }} </span></span></a>
-                    <ul aria-expanded="false" class="collapse">
-
-                        <li *ngFor="let submenu of menu.submenu">
-                            <a routerLinkActive="active" [routerLink]="[ submenu.url ]"> {{ submenu.titulo }} </a>
-                        </li>
-
-                        <!-- <li><a href="index2.html">Analytical</a></li>
-                        <li><a href="index3.html">Demographical</a></li>
-                        <li><a href="index4.html">Modern</a></li> -->
+                        <li><a routerLinkActive="active" routerLink="/perfil">Mi Perfil </a></li>
+                        <!--<li><a href="javascript:void()">My Balance</a></li>-->
+                        <!--<li><a href="javascript:void()">Inbox</a></li>-->
+                        <!--<li><a routerLinkActive="active" routerLink="/account-settings">Account Setting</a></li>-->
+                        <li><a (click)="_usuarioService.logout()" class="pointer">Cerrar sesión</a></li>
                     </ul>
                 </li>
 
-                <!--AJUSTES DE LA PLATAFORMA-->
+                <!--PACIENTES-->
 
                 <li class="user-profile">
-                    <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                        <img src="assets/images/logo-ajustes.png" alt="user" />
-                        <span class="hide-menu"> Ajustes </span>
+                    <a class="has-arrow waves-effect" href="#" aria-expanded="false">
+                        <img src="assets/images/logo-usuario.png" alt="user" />
+                        <span class="hide-menu"> Pacientes </span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a routerLinkActive="active" routerLink="/account-settings">Account Setting</a></li>
+                        <li><a routerLinkActive="active" routerLink="/hospitales">Lista de pacientes</a></li>
                     </ul>
                 </li>
 
-                <!--FIN AJUSTES DE LA PLATAFORMA-->
+                <!--FIN PACIENTES-->
 
+                <!--CONSULTAS-->
+
+                <li class="user-profile">
+                    <a class="has-arrow waves-effect" href="#" aria-expanded="false">
+                        <img src="assets/images/logo-user.png" alt="user" />
+                        <span class="hide-menu"> Consulta </span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a routerLinkActive="active" routerLink="/medicos">Consultas</a></li>
+                        <li><a routerLinkActive="active" [routerLink]="['/medico','nuevo']">Nueva consulta</a></li>
+                    </ul>
+                </li>
+
+                <!--FIN CONSULTAS-->
 
 
                 <!--AGENDAMIENTO-->
@@ -67,6 +64,56 @@
                 </li>
 
                 <!--FIN AGENDAMIENTO-->
+
+
+                <!--USUARIOS-->
+
+                <li class="user-profile">
+                    <a class="has-arrow waves-effect" href="#" aria-expanded="false">
+                        <img src="assets/images/logo-ajustes.png" alt="user" />
+                        <span class="hide-menu"> Ajustes </span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a routerLinkActive="active" routerLink="/usuarios">Usuarios</a></li>
+                        <li><a routerLinkActive="active" routerLink="/account-settings">Temas</a></li>
+                    </ul>
+                </li>
+
+                <!--FIN USUARIOS-->
+
+                <!--
+                    <li class="nav-devider"></li>
+                <li class="nav-small-cap">PERSONAL</li>
+                
+                
+                <li *ngFor="let menu of _sidebar.menu">
+                    <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu.icono"></i><span class="hide-menu"> {{ menu.titulo }} <span class="label label-rouded label-themecolor pull-right"> {{ menu.submenu.length }} </span></span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        
+                        
+                        <li *ngFor="let submenu of menu.submenu">
+                            <a routerLinkActive="active" [routerLink]="[ submenu.url ]"> {{ submenu.titulo }} </a>
+                        </li>-->
+                <!-- <li><a href="index2.html">Analytical</a></li>
+                        <li><a href="index3.html">Demographical</a></li>
+                        <li><a href="index4.html">Modern</a></li> -->
+                <!-- </ul>
+                </li>-->
+
+                <!--AJUSTES DE LA PLATAFORMA-->
+
+                <!--                <li class="user-profile">
+                    <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                        <img src="assets/images/logo-ajustes.png" alt="user" />
+                        <span class="hide-menu"> Ajustes </span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a routerLinkActive="active" routerLink="/account-settings">Account Setting</a></li>
+                    </ul>
+                </li>-->
+
+                <!--FIN AJUSTES DE LA PLATAFORMA-->
+
 
 
             </ul>

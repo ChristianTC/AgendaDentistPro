@@ -16,7 +16,6 @@ export class AdminGuard implements CanActivate {
       return true;
     }else {
       console.log( 'Bloqueado por el ADMIN GUARD');
-      this._usuarioService.logout();
       return false;
     }
 

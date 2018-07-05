@@ -15,6 +15,7 @@ export class HospitalesComponent implements OnInit {
 
   hospitales: Hospital[] = [];
 
+
   constructor(
     public _hospitalService: HospitalService,
     public _modalUploadService: ModalUploadService
@@ -62,8 +63,8 @@ export class HospitalesComponent implements OnInit {
   crearHospital() {
 
     swal({
-      title: 'Crear hospital',
-      text: 'Ingrese el nombre del hospital',
+      title: 'Nuevo paciente',
+      text: 'Ingrese el nombre del paciente',
       content: 'input',
       icon: 'info',
       buttons: true,

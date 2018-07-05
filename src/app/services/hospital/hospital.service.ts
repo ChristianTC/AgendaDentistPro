@@ -41,7 +41,7 @@ export class HospitalService {
     url += '?token=' + this._usuarioService.token;
 
     return this.http.delete( url )
-                .map( resp => swal('Hospital Borrado', 'Eliminado correctamente', 'success') );
+                .map( resp => swal('Paciente Borrado', 'Eliminado correctamente', 'success') );
 
   }
 
@@ -70,7 +70,7 @@ export class HospitalService {
     return this.http.put( url, hospital )
               .map( (resp: any) => {
 
-                swal('Hospital Actualiado', hospital.nombre, 'success');
+                swal('Datos del paciente actualizado', hospital.nombre, 'success');
                 return resp.hospital;
               });
 

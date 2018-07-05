@@ -2,30 +2,20 @@
 
     <div class="col-md-6">
         <div class="card card-body">
-            <h3 class="box-title m-b-0">Paciente: {{ medico.nombre }}</h3>
+            <h3 class="box-title m-b-0">Consulta: {{ medico.nombre }}</h3>
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
                     <form #f="ngForm" ngNativeValidate (ngSubmit)="guardarMedico(f)">
                         <!--NOMBRES-->
                         <div class="form-group">
-                            <label>Nombre(s)</label>
-                            <input [(ngModel)]="medico.nombre" name="nombre" type="text" class="form-control" placeholder="Nombre(s)" required>
-                        </div>
-                        <!--APELLIDO PATERNO-->
-                        <div class="form-group">
-                            <label>Apellido paterno</label>
-                            <input [(ngModel)]="medico.apellidop" name="apellidop" type="text" class="form-control" placeholder="Apellido paterno" required>
-                        </div>
-                        <!--APELLIDO MATERNO-->
-                        <div class="form-group">
-                            <label>Apellido materno</label>
-                            <input [(ngModel)]="medico.apellidom" name="apellidom" type="text" class="form-control" placeholder="Apellido materno" required>
+                            <label>Descripcion</label>
+                            <input [(ngModel)]="medico.nombre" name="nombre" type="text" class="form-control" placeholder="Ingrese la descripción" required>
                         </div>
 
                         <div class="form-group">
-                            <label>Consultorio</label>
+                            <label>Paciente</label>
                             <select (change)="cambioHospital( $event.target.value )" [(ngModel)]="medico.hospital" name="hospital" class="form-control" required>
-                              <option value="">Seleccione Hospital</option>
+                              <option value="">Seleccione paciente</option>
                               <option *ngFor="let hospital of hospitales" [value]="hospital._id">
                                 {{ hospital.nombre }}
                               </option>
@@ -48,7 +38,7 @@
 
     <div class="col-md-3">
         <div class="card card-body">
-            <h4 class="box-title m-b-0">Hospital</h4>
+            <h4 class="box-title m-b-0">Paciente</h4>
 
             <img [src]="hospital.img | imagen:'hospital'" class="rounded img-fluid">
         </div>

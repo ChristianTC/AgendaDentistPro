@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body">
 
-                <input #input (keyup)="buscarMedico( input.value )" type="text" class="form-control" placeholder="Buscar médico...">
+                <input #input (keyup)="buscarMedico( input.value )" type="text" class="form-control" placeholder="Buscar consulta...">
 
             </div>
         </div>
@@ -19,18 +19,18 @@
                 <div class="text-right">
                     <button [routerLink]="['/medico','nuevo']" type="button" class="btn waves-effect waves-light btn-rounded btn-primary">
                     <i class="fa fa-plus"></i> 
-                    Crear Médico
+                    Nueva consulta
                   </button>
                 </div>
 
-                <h3 class="card-title">Médicos registrados ( <small> {{ _medicoService.totalMedicos }} </small> )</h3>
+                <h3 class="card-title">Consultas ( <small> {{ _medicoService.totalMedicos }} </small> )</h3>
 
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th>Foto</th>
-                            <th>Médico</th>
-                            <th>Hospital</th>
+                            <th>Consulta</th>
+                            <th>Paciente</th>
                             <th></th>
                         </tr>
                     </thead>

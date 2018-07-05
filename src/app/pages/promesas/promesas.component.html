@@ -11,25 +11,19 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="card-body">
-                            <h4 class="card-title m-t-10">Drag & Drop Event</h4>
+                            <h4 class="card-title m-t-10">Lista de Eventos</h4>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div id="calendar-events" class="">
-                                        <div class="calendar-events" data-class="bg-info"><i class="fa fa-circle text-info"></i> My Event One</div>
-                                        <div class="calendar-events" data-class="bg-success"><i class="fa fa-circle text-success"></i> My Event Two</div>
+                                        <div class="calendar-events" data-class="bg-info"><i class="fa fa-circle text-info"></i> Consultas</div>
+                                        <div class="calendar-events" data-class="bg-success"><i class="fa fa-circle text-success"></i> Almuerzo</div>
                                         <div class="calendar-events" data-class="bg-danger"><i class="fa fa-circle text-danger"></i> Fuera de atencion</div>
-                                        <div class="calendar-events" data-class="bg-warning"><i class="fa fa-circle text-warning"></i> My Event Four</div>
+
                                     </div>
                                     <!-- checkbox -->
-                                    <div class="checkbox m-t-20">
-                                        <input id="drop-remove" type="checkbox">
-                                        <label for="drop-remove">
-                                                            Remove after drop
-                                                        </label>
-                                    </div>
-                                    <a href="#" data-toggle="modal" data-target="#add-new-event" class="btn m-t-10 btn-info btn-block waves-effect waves-light">
-                                        <i class="ti-plus"></i> Add New Event
-                                    </a>
+                                    <!--<a href="#" data-toggle="modal" data-target="#add-new-event" class="btn m-t-10 btn-info btn-block waves-effect waves-light">
+                                        <i class="ti-plus"></i> Añadir nuevo evento
+                                    </a>-->
                                 </div>
                             </div>
                         </div>
@@ -66,25 +60,25 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title"><strong>Add</strong> a category</h4>
+                <h4 class="modal-title"><strong>Añadir</strong> nuevo evento.</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
                 <form role="form">
                     <div class="row">
                         <div class="col-md-6">
-                            <label class="control-label">Category Name</label>
+                            <label class="control-label">Nombre Categoria</label>
                             <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name" />
                         </div>
                         <div class="col-md-6">
-                            <label class="control-label">Choose Category Color</label>
+                            <label class="control-label">Color</label>
                             <select class="form-control form-white" data-placeholder="Choose a color..." name="category-color">
-                                                <option value="success">Success</option>
-                                                <option value="danger">Danger</option>
-                                                <option value="info">Info</option>
-                                                <option value="primary">Primary</option>
-                                                <option value="warning">Warning</option>
-                                                <option value="inverse">Inverse</option>
+                                                <option value="success">Verde</option>
+                                                <option value="danger">Rojo</option>
+                                                <option value="info">Azul</option>
+                                                <option value="primary">Purpura</option>
+                                                <option value="warning">Naranja</option>
+                                                <option value="inverse">Plomo</option>
                                             </select>
                         </div>
                     </div>
